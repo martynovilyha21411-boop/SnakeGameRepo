@@ -23,7 +23,10 @@ namespace snake
 
             try
             {
-                string texturePath = Path.Combine(Application.StartupPath, "Textures");
+                string projectPath = Directory.GetParent(Application.StartupPath).Parent.FullName;
+                string texturePath = Path.Combine(projectPath, "Textures");
+
+                System.Diagnostics.Debug.WriteLine("Путь к текстурам: " + texturePath);
 
                 // Проверяем существует ли папка
                 if (!Directory.Exists(texturePath))

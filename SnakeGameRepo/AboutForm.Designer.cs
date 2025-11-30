@@ -63,12 +63,12 @@ namespace snake
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F);
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.linkLabel1.Location = new System.Drawing.Point(237, 467);
+            this.linkLabel1.Location = new System.Drawing.Point(86, 468);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(324, 25);
+            this.linkLabel1.Size = new System.Drawing.Size(598, 25);
             this.linkLabel1.TabIndex = 2;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "https://github.com/your-repo-link";
+            this.linkLabel1.Text = "https://github.com/martynovilyha21411-boop/SnakeGameRepo";
             // 
             // AboutForm
             // 
@@ -82,7 +82,7 @@ namespace snake
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AboutForm";
-            this.Text = "AboutForm";
+            this.Text = "О программе";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
