@@ -191,24 +191,20 @@ namespace snake
             if (vertical) return SegmentType.BodyVertical;
             if (horizontal) return SegmentType.BodyHorizontal;
 
-            // Угловые сегменты
-            if (prev.X == current.X && current.Y == next.Y)
-            {
-                if (prev.Y < current.Y) // Движение вниз
-                    return current.X < next.X ? SegmentType.BodyTopLeft : SegmentType.BodyTopRight;
-                else // Движение вверх
-                    return current.X < next.X ? SegmentType.BodyBottomLeft : SegmentType.BodyBottomRight;
-            }
-            else if (prev.Y == current.Y && current.X == next.X)
-            {
-                if (prev.X < current.X) // Движение вправо
-                    return current.Y < next.Y ? SegmentType.BodyTopLeft : SegmentType.BodyBottomLeft;
-                else // Движение влево
-                    return current.Y < next.Y ? SegmentType.BodyTopRight : SegmentType.BodyBottomRight;
-            }
+            // Угловой сегмент
+            if ((prev.X < current.X && next.Y < current.Y) || (next.X < current.X && prev.Y < current.Y))
+                return SegmentType.BodyBottomRight;    // ┌
+            if ((prev.X < current.X && next.Y > current.Y) || (next.X < current.X && prev.Y > current.Y))
+                return SegmentType.BodyTopRight; // └
+            if ((prev.X > current.X && next.Y < current.Y) || (next.X > current.X && prev.Y < current.Y))
+                return SegmentType.BodyBottomLeft;   // ┐
+            if ((prev.X > current.X && next.Y > current.Y) || (next.X > current.X && prev.Y > current.Y))
+                return SegmentType.BodyTopLeft; // ┘
 
+            // fallback
             return SegmentType.BodyHorizontal;
         }
+
 
         public void Grow()
         {

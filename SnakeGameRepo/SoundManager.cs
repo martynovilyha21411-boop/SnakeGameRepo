@@ -31,7 +31,11 @@ namespace snake
 
             try
             {
-                string soundsPath = Path.Combine(Application.StartupPath, "Sounds");
+                //string soundsPath = Path.Combine(Application.StartupPath, "Sounds");
+
+                string projectPath = Directory.GetParent(Application.StartupPath).Parent.FullName;
+                string soundsPath = Path.Combine(projectPath, "Sounds");
+                Console.WriteLine(soundsPath);
 
                 if (!Directory.Exists(soundsPath))
                 {
