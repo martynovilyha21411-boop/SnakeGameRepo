@@ -117,7 +117,7 @@ namespace snake
             this.buttonApply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonApply.Font = new System.Drawing.Font("8BIT WONDER(RUS BY LYAJKA)", 10F, System.Drawing.FontStyle.Bold);
             this.buttonApply.ForeColor = System.Drawing.Color.Orange;
-            this.buttonApply.Location = new System.Drawing.Point(60, 280);
+            this.buttonApply.Location = new System.Drawing.Point(60, 276);
             this.buttonApply.Name = "buttonApply";
             this.buttonApply.Size = new System.Drawing.Size(338, 29);
             this.buttonApply.TabIndex = 6;
