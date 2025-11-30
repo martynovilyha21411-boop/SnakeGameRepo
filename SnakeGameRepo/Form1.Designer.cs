@@ -56,7 +56,6 @@ namespace snake
             // pictureBoxGame
             // 
             this.pictureBoxGame.BackColor = System.Drawing.Color.Black;
-            this.pictureBoxGame.Image = global::snake.Properties.Resources.Grid;
             this.pictureBoxGame.Location = new System.Drawing.Point(10, 92);
             this.pictureBoxGame.Name = "pictureBoxGame";
             this.pictureBoxGame.Size = new System.Drawing.Size(800, 800);
