@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 
-namespace SnakeGameRepo
+namespace snake
 {
     public class Segment
     {
-        public Position Position;
-        public SegmentType Type;
+        public Position Position { get; set; }
+        public SegmentType Type { get; set; }
 
-        public Segment(Position pos, SegmentType type)
+        public Segment(Position position, SegmentType type)
         {
-            Position = pos;
+            Position = position;
             Type = type;
         }
     }

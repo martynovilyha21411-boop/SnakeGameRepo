@@ -1,15 +1,49 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SnakeGameRepo
+﻿namespace snake
 {
     public enum SegmentType
     {
-        Head,
-        Body,
-        Tail
+        // Основные головы
+        HeadUp,
+        HeadDown,
+        HeadLeft,
+        HeadRight,
+
+        // Открытый рот
+        HeadUpOpen,
+        HeadDownOpen,
+        HeadLeftOpen,
+        HeadRightOpen,
+
+        // Губы (перед головой)
+        LipsUp,
+        LipsDown,
+        LipsLeft,
+        LipsRight,
+
+        // Мертвая голова
+        HeadUpDead,
+        HeadDownDead,
+        HeadLeftDead,
+        HeadRightDead,
+
+        // Тело
+        BodyVertical,
+        BodyHorizontal,
+        BodyTopRight, // ┐
+        BodyTopLeft,  // ┌
+        BodyBottomRight, // ┘
+        BodyBottomLeft, // └
+
+        // Хвост
+        TailUp,
+        TailDown,
+        TailLeft,
+        TailRight,
+
+        // Язык
+        TongueUp,
+        TongueDown,
+        TongueLeft,
+        TongueRight
     }
 }

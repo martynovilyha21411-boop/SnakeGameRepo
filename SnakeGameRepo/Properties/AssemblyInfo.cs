@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных со сборкой.
-[assembly: AssemblyTitle("SnakeGameRepo")]
+[assembly: AssemblyTitle("snake")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Administrator")]
-[assembly: AssemblyProduct("SnakeGameRepo")]
+[assembly: AssemblyProduct("snake")]
 [assembly: AssemblyCopyright("Copyright © Administrator 2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("4259c3eb-1edc-4d84-bedb-0b36d64e421c")]
+[assembly: Guid("741eec48-a147-44c7-8c8f-b6cd5fd81767")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //

@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SnakeGameRepo
+namespace snake
 {
-    public struct Position
+    public class Position
     {
-        public int X;
-        public int Y;
+        public int X { get; set; }
+        public int Y { get; set; }
 
         public Position(int x, int y)
         {
@@ -17,9 +17,31 @@ namespace SnakeGameRepo
             Y = y;
         }
 
-        public bool Equals(Position other)
+        public override bool Equals(object obj)
         {
-            return X == other.X && Y == other.Y;
+            return obj is Position position &&
+                   X == position.X &&
+                   Y == position.Y;
+        }
+
+        public override int GetHashCode()
+        {
+            // Альтернатива для .NET Framework
+            unchecked // Переполнение игнорируется
+            {
+                int hash = 17;
+                hash = hash * 23 + X.GetHashCode();
+                hash = hash * 23 + Y.GetHashCode();
+                return hash;
+            }
+
+            // Или более простой вариант:
+            // return (X * 397) ^ Y;
+        }
+
+        public override string ToString()
+        {
+            return $"({X}, {Y})";
         }
     }
 }
